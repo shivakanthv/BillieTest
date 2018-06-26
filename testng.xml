@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+	<test thread-count="1" name="TestAutomationTaskShivakanth">
+		<classes>
+			<class name="org.Billie.Test.ValidateComment" />
+			<class name="org.Billie.Test.VerifyCommentCounts" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
