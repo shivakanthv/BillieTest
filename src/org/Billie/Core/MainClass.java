@@ -6,7 +6,7 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonReader;
 
-import org.Billie.resources.TestData;
+import org.Billie.Resources.TestData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
@@ -36,10 +36,10 @@ public class MainClass implements TestData {
 	public JsonArray getArray() {
 		return array;
 	}
-	
-	/**
+
+	/*****************************************
 	 * @Desc : TO fetch data from URL provided
-	 */
+	 ****************************************/
 
 	@BeforeClass
 	public void getDataFromURL() {
@@ -49,14 +49,14 @@ public class MainClass implements TestData {
 			Response response = httpRequest.request(Method.GET, urlKey);
 			int responseCode = response.getStatusCode();
 
-			if(responseCode ==200) {
+			if (responseCode == 200) {
 				setResponseBody(response.getBody().asString());
 				JsonReader reader = Json.createReader(new StringReader(responseBody));
 				setArray(reader.readArray());
-
-			}else {
-				System.out.print("--> Response Code Invalid\n");
-				Assert.fail("--> Response Not proper / Response code invalid");
+				System.out.println("=> Success : Response Code valid\n");
+			} else {
+				System.out.println("--> Failure : Response Code Invalid\n");
+				Assert.fail("--> Failure : Response Not proper / Response code invalid");
 			}
 		} catch (Exception e) {
 			System.out.println("--> Exception found in Method : getData " + e.toString());

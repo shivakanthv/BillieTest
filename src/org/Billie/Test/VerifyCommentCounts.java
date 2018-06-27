@@ -7,16 +7,18 @@ import java.util.Map;
 import javax.json.JsonArray;
 import org.Billie.Core.MainClass;
 
-/**
+/*********************************************
  * TO verify the comment counts - Generic Code
+ * 
  * @author shivakanth
- */
+ ********************************************/
 public class VerifyCommentCounts extends MainClass {
 
 	@Test()
 	public void verifyCommentCountForID() {
-		int value = 0;
+		System.out.println("*****Verifying comment counts******\n");
 
+		int value = 0;
 		JsonArray array;
 		Map<String, Integer> postIdFrequency = new HashMap<String, Integer>();
 
@@ -30,7 +32,7 @@ public class VerifyCommentCounts extends MainClass {
 
 				if (count == null)
 					postIdFrequency.put(postId, 1);
-				else 
+				else
 					postIdFrequency.put(postId, count + 1);
 
 			});
@@ -39,11 +41,12 @@ public class VerifyCommentCounts extends MainClass {
 				value = postIdFrequency.get(postIDValueToFetch);
 
 			if (value == countToValidate)
-				System.out.println("=> Number of comments found for id - " + postIDValueToFetch + " is : " + value + "\n");
+				System.out.println("=> Success : Number of comments found for id - " + postIDValueToFetch + " is : "
+						+ value + "\n");
 			else
-				Assert.fail("--> Comment count is not as expected\n");
+				Assert.fail("--> Failure : Comment count is not as expected\n");
 		} else
-			Assert.fail("--> Comment count is not as expected as response array is empty or not valid\n");
+			Assert.fail("--> Failure : Comment count is not as expected as response array is empty or not valid\n");
 
 	}
 }

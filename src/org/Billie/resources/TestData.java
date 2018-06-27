@@ -1,5 +1,9 @@
-package org.Billie.resources;
+package org.Billie.Resources;
 
+/*******************************
+ * @author shivakanth
+ * @Desc : To store data Required
+ *******************************/
 public interface TestData {
 
 	String urlKey = "https://jsonplaceholder.typicode.com/comments";

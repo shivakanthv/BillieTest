@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-06-26T22:24:02Z" name="TestSuite" finished-at="2018-06-26T22:24:06Z" duration-ms="4244">
+  <suite started-at="2018-06-27T08:08:21Z" name="TestSuite" finished-at="2018-06-27T08:08:23Z" duration-ms="1961">
     <groups>
     </groups>
-    <test started-at="2018-06-26T22:24:02Z" name="TestAutomationTaskShivakanth" finished-at="2018-06-26T22:24:06Z" duration-ms="4244">
-      <class name="org.Billie.Test.VerifyCommentCounts">
-        <test-method is-config="true" signature="getDataFromURL()[pri:0, instance:org.Billie.Test.VerifyCommentCounts@2d2ffcb7]" started-at="2018-06-26T22:24:06Z" name="getDataFromURL" finished-at="2018-06-26T22:24:06Z" duration-ms="438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getDataFromURL -->
-        <test-method signature="verifyCommentCountForID()[pri:0, instance:org.Billie.Test.VerifyCommentCounts@2d2ffcb7]" started-at="2018-06-26T22:24:06Z" name="verifyCommentCountForID" finished-at="2018-06-26T22:24:06Z" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCommentCountForID -->
-      </class> <!-- org.Billie.Test.VerifyCommentCounts -->
+    <test started-at="2018-06-27T08:08:21Z" name="TestAutomationTaskShivakanth" finished-at="2018-06-27T08:08:23Z" duration-ms="1961">
       <class name="org.Billie.Test.ValidateComment">
-        <test-method is-config="true" signature="getDataFromURL()[pri:0, instance:org.Billie.Test.ValidateComment@291b4bf5]" started-at="2018-06-26T22:24:02Z" name="getDataFromURL" finished-at="2018-06-26T22:24:05Z" duration-ms="3762" status="PASS">
+        <test-method is-config="true" signature="getDataFromURL()[pri:0, instance:org.Billie.Test.ValidateComment@291b4bf5]" started-at="2018-06-27T08:08:21Z" name="getDataFromURL" finished-at="2018-06-27T08:08:22Z" duration-ms="1546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDataFromURL -->
-        <test-method signature="verifyPresenceOfComment()[pri:0, instance:org.Billie.Test.ValidateComment@291b4bf5]" started-at="2018-06-26T22:24:05Z" name="verifyPresenceOfComment" finished-at="2018-06-26T22:24:05Z" duration-ms="0" status="PASS">
+        <test-method signature="verifyPresenceOfComment()[pri:0, instance:org.Billie.Test.ValidateComment@291b4bf5]" started-at="2018-06-27T08:08:22Z" name="verifyPresenceOfComment" finished-at="2018-06-27T08:08:22Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPresenceOfComment -->
       </class> <!-- org.Billie.Test.ValidateComment -->
+      <class name="org.Billie.Test.VerifyCommentCounts">
+        <test-method is-config="true" signature="getDataFromURL()[pri:0, instance:org.Billie.Test.VerifyCommentCounts@2d2ffcb7]" started-at="2018-06-27T08:08:22Z" name="getDataFromURL" finished-at="2018-06-27T08:08:23Z" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDataFromURL -->
+        <test-method signature="verifyCommentCountForID()[pri:0, instance:org.Billie.Test.VerifyCommentCounts@2d2ffcb7]" started-at="2018-06-27T08:08:23Z" name="verifyCommentCountForID" finished-at="2018-06-27T08:08:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCommentCountForID -->
+      </class> <!-- org.Billie.Test.VerifyCommentCounts -->
     </test> <!-- TestAutomationTaskShivakanth -->
   </suite> <!-- TestSuite -->
 </testng-results>
